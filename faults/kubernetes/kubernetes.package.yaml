@@ -1,6 +1,6 @@
 ---
 packageName: kubernetes
 faults:
-  - name: pod-delete
-    CSV: pod-delete.chartserviceversion.yaml
-    desc: "pod-delete"
+  - name: http-delay
+    CSV: http-delay.chartserviceversion.yaml
+    desc: "http-delay"

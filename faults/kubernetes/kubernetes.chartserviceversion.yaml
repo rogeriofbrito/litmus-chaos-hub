@@ -13,9 +13,9 @@ spec:
   categoryDescription: >
     Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easier management and discovery. It will install all the experiments which can be used to inject chaos into containerized applications.
   faults:
-    - name: pod-delete
-      description: It injects pod-delete chaos in a Kubernetes pod.
-      displayName: "Pod Delete"
+    - name: http-delay
+      description: It injects Istio http-delay chaos in a Kubernetes namespace.
+      displayName: "Http Delay"
   keywords:
     - Kubernetes
   maintainers:

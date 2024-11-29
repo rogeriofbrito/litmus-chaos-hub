@@ -13,7 +13,7 @@ spec:
   engineState: 'active'
   chaosServiceAccount: pod-delete-sa
   experiments:
-    - name: pod-delete
+    - name: http-delay
       spec:
         components:
           env:

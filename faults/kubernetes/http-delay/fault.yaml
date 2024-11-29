@@ -2,12 +2,12 @@
 apiVersion: litmuschaos.io/v1alpha1
 description:
   message: |
-    Deletes a pod belonging to a deployment/statefulset/daemonset
+    Http Delay Istio fault
 kind: ChaosExperiment
 metadata:
-  name: pod-delete
+  name: http-delay
   labels:
-    name: pod-delete
+    name: http-delay
     app.kubernetes.io/part-of: litmus
     app.kubernetes.io/component: chaosexperiment
     app.kubernetes.io/version: ci
@@ -72,7 +72,7 @@ spec:
     imagePullPolicy: Always
     args:
       - -c
-      - ./helpers -name pod-delete
+      - ./helpers -name http-delay
     command:
       - /bin/bash
     env:
@@ -112,7 +112,7 @@ spec:
         value: "parallel"
 
     labels:
-      name: pod-delete
+      name: http-delay
       app.kubernetes.io/part-of: litmus
       app.kubernetes.io/component: experiment-job
       app.kubernetes.io/version: ci

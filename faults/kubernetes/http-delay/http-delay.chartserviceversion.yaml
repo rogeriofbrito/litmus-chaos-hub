@@ -2,17 +2,15 @@
 apiVersion: litmuschaos.io/v1alpha1
 kind: ChartServiceVersion
 metadata:
-  name: pod-delete
+  name: http-delay
   version: 0.1.0
   annotations:
     categories: Kubernetes
     vendor: LitmusChaos
 spec:
-  displayName: Pod Delete
+  displayName: Http Delay
   categoryDescription: |
-    Pod delete fault disrupts the state of Kubernetes resources. This fault injects random pod delete failures against specified application.
-    - Causes (forced/graceful) pod failure of random replicas of an application deployment.
-    - Tests deployment sanity (replica availability & uninterrupted service) and recovery workflows of the application pod.
+    Http Delay Istio fault
   keywords:
     - Kubernetes
   platforms:
@@ -29,10 +27,7 @@ spec:
     - name: ksatchit
       email: karthik.s@harness.io
   experiments:
-    - pod-delete
-    - podtato-head
-    - sock-shop
-    - sock-shop-promProbe
+    - http-delay
   minKubeVersion: 1.12.0
   labels:
     app.kubernetes.io/component: chartserviceversion
