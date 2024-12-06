@@ -67,7 +67,7 @@ spec:
       - apiGroups: ["litmuschaos.io"]
         resources: ["chaosengines", "chaosexperiments", "chaosresults"]
         verbs: ["create", "list", "get", "patch", "update", "delete"]
-    image: "rogeriofbrito/go-runner:latest"
+    image: "rogeriofbrito/go-runner:ci"
     imagePullPolicy: Always
     args:
       - -c

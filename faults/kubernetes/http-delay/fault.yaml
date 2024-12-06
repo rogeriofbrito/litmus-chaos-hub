@@ -68,11 +68,11 @@ spec:
       - apiGroups: ["litmuschaos.io"]
         resources: ["chaosengines", "chaosexperiments", "chaosresults"]
         verbs: ["create", "list", "get", "patch", "update", "delete"]
-    image: "rogeriofbrito/istio-go-runner:latest"
+    image: "rogeriofbrito/go-runner:ci"
     imagePullPolicy: Always
     args:
       - -c
-      - ./helpers -name http-delay
+      - ./experiments -name istio-http-latency
     command:
       - /bin/bash
     env:
