@@ -1,6 +1,6 @@
 ---
 packageName: kubernetes
 faults:
-  - name: http-delay
-    CSV: http-delay.chartserviceversion.yaml
-    desc: "http-delay"
+  - name: istio-http-latency
+    CSV: istio-http-latency.chartserviceversion.yaml
+    desc: "istio-http-latency"

@@ -2,14 +2,14 @@
 apiVersion: litmuschaos.io/v1alpha1
 kind: ChaosEngine
 metadata:
-  name: nginx-chaos
+  name: istio-http-latency-chaos
   namespace: default
 spec:
   # It can be active/stop
   engineState: 'active'
-  chaosServiceAccount: pod-delete-sa
+  chaosServiceAccount: istio-http-latency-sa
   experiments:
-    - name: http-delay
+    - name: istio-http-latency
       spec:
         components:
           env:

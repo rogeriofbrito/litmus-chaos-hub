@@ -5,9 +5,9 @@ description:
     Http Delay Istio fault
 kind: ChaosExperiment
 metadata:
-  name: http-delay
+  name: istio-http-latency
   labels:
-    name: http-delay
+    name: istio-http-latency
     app.kubernetes.io/part-of: litmus
     app.kubernetes.io/component: chaosexperiment
     app.kubernetes.io/version: ci
@@ -110,7 +110,7 @@ spec:
         value: "2000"
 
     labels:
-      name: http-delay
+      name: istio-http-latency
       app.kubernetes.io/part-of: litmus
       app.kubernetes.io/component: experiment-job
       app.kubernetes.io/version: ci
