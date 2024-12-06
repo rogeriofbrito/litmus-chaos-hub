@@ -13,19 +13,35 @@ spec:
       spec:
         components:
           env:
-            # set chaos duration (in sec) as desired
             - name: TOTAL_CHAOS_DURATION
-              value: '30'
+              value: "60"
 
-            # set chaos interval (in sec) as desired
-            - name: CHAOS_INTERVAL
-              value: '10'
+            - name: NAMESPACE
+              value: ""
 
-            # pod failures without '--force' & default terminationGracePeriodSeconds
-            - name: FORCE
-              value: 'false'
+            - name: VIRTUAL_SERVICE
+              value: ""
 
-             ## percentage of total pods to target
-            - name: PODS_AFFECTED_PERC
-              value: ''
+            - name: DESTINATION_HOSTS
+              value: ""
 
+            - name: DESTINATION_PORTS
+              value: ""
+
+            - name: MATCH_HEADERS
+              value: ""
+
+            - name: MATCH_HEADERS_SCHEME
+              value: ""
+
+            - name: MATCH_URIS
+              value: ""
+
+            - name: MATCH_URIS_SCHEME
+              value: ""
+
+            - name: REQUEST_AFFECTED_PERC
+              value: "100"
+
+            - name: LATENCY
+              value: "2000"

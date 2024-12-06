@@ -77,39 +77,37 @@ spec:
       - /bin/bash
     env:
       - name: TOTAL_CHAOS_DURATION
-        value: "15"
+        value: "60"
 
-      # Period to wait before and after injection of chaos in sec
-      - name: RAMP_TIME
+      - name: NAMESPACE
         value: ""
 
-      - name: FORCE
-        value: "true"
-
-      - name: CHAOS_INTERVAL
-        value: "5"
-
-      ## percentage of total pods to target
-      - name: PODS_AFFECTED_PERC
+      - name: VIRTUAL_SERVICE
         value: ""
 
-      - name: TARGET_CONTAINER
+      - name: DESTINATION_HOSTS
         value: ""
 
-      - name: TARGET_PODS
+      - name: DESTINATION_PORTS
         value: ""
 
-      - name: DEFAULT_HEALTH_CHECK
-        value: "false"
-
-      # To select pods on specific node(s)
-      - name: NODE_LABEL
+      - name: MATCH_HEADERS
         value: ""
 
-      ## it defines the sequence of chaos execution for multiple target pods
-      ## supported values: serial, parallel
-      - name: SEQUENCE
-        value: "parallel"
+      - name: MATCH_HEADERS_SCHEME
+        value: ""
+
+      - name: MATCH_URIS
+        value: ""
+
+      - name: MATCH_URIS_SCHEME
+        value: ""
+
+      - name: REQUEST_AFFECTED_PERC
+        value: "100"
+
+      - name: LATENCY
+        value: "2000"
 
     labels:
       name: http-delay
