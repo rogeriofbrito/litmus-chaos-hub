@@ -5,10 +5,6 @@ metadata:
   name: nginx-chaos
   namespace: default
 spec:
-  appinfo:
-    appns: ''
-    applabel: ''
-    appkind: ''
   # It can be active/stop
   engineState: 'active'
   chaosServiceAccount: pod-delete-sa
