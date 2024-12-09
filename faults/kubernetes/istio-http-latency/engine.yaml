@@ -22,10 +22,7 @@ spec:
             - name: VIRTUAL_SERVICE
               value: ""
 
-            - name: DESTINATION_HOSTS
-              value: ""
-
-            - name: DESTINATION_PORTS
+            - name: ROUTE_REFERENCE_INDEX
               value: ""
 
             - name: MATCH_HEADERS
