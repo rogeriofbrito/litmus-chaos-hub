@@ -90,13 +90,13 @@ spec:
       - name: MATCH_HEADERS
         value: ""
 
-      - name: MATCH_HEADERS_SCHEME
+      - name: MATCH_HEADERS_SCHEMES
         value: ""
 
-      - name: MATCH_URIS
+      - name: MATCH_URI
         value: ""
 
-      - name: MATCH_URIS_SCHEME
+      - name: MATCH_URI_SCHEME
         value: ""
 
       - name: REQUEST_AFFECTED_PERC
