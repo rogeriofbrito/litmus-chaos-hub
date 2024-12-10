@@ -2,12 +2,12 @@
 apiVersion: litmuschaos.io/v1alpha1
 description:
   message: |
-    Istio Http Latency fault
+    Istio Http Status Code fault
 kind: ChaosExperiment
 metadata:
-  name: istio-http-latency
+  name: istio-http-status-code
   labels:
-    name: istio-http-latency
+    name: istio-http-status-code
     app.kubernetes.io/part-of: litmus
     app.kubernetes.io/component: chaosexperiment
     app.kubernetes.io/version: ci
@@ -72,7 +72,7 @@ spec:
     imagePullPolicy: Always
     args:
       - -c
-      - ./experiments -name istio-http-latency
+      - ./experiments -name istio-http-status-code
     command:
       - /bin/bash
     env:
@@ -103,11 +103,11 @@ spec:
       - name: REQUEST_AFFECTED_PERC
         value: "100"
 
-      - name: LATENCY
-        value: "2000"
+      - name: STATUS_CODE
+        value: ""
 
     labels:
-      name: istio-http-latency
+      name: istio-http-status-code
       app.kubernetes.io/part-of: litmus
       app.kubernetes.io/component: experiment-job
       app.kubernetes.io/version: ci

@@ -4,3 +4,6 @@ faults:
   - name: istio-http-latency
     CSV: istio-http-latency.chartserviceversion.yaml
     desc: "istio-http-latency"
+  - name: istio-http-status-code
+    CSV: istio-http-status-code.chartserviceversion.yaml
+    desc: "istio-http-status-code"

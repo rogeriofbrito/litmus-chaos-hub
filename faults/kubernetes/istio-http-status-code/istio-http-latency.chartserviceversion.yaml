@@ -8,9 +8,9 @@ metadata:
     categories: Kubernetes
     vendor: LitmusChaos
 spec:
-  displayName: Http Delay
+  displayName: Istio Http Latency Fault
   categoryDescription: |
-    Http Delay Istio fault
+    Istio Http Latency Fault
   keywords:
     - Kubernetes
   platforms:
