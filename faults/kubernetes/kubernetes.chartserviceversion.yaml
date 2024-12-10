@@ -14,8 +14,11 @@ spec:
     Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easier management and discovery. It will install all the experiments which can be used to inject chaos into containerized applications.
   faults:
     - name: istio-http-latency
-      description: It injects Istio Http Delay fault in a Kubernetes namespace.
+      description: It injects Istio Http Latency fault in a Kubernetes namespace.
       displayName: "Istio Http Latency"
+    - name: istio-http-status-code
+      description: It injects Istio Http Status Code fault in a Kubernetes namespace.
+      displayName: "Http Status Code"
   keywords:
     - Kubernetes
   maintainers:
